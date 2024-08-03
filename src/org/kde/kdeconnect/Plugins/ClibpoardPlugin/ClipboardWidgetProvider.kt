@@ -1,5 +1,6 @@
 package org.kde.kdeconnect.Plugins.ClibpoardPlugin
 
+import android.annotation.SuppressLint
 import android.app.PendingIntent
 import android.appwidget.AppWidgetManager
 import android.appwidget.AppWidgetProvider
@@ -14,6 +15,7 @@ import org.kde.kdeconnect_tp.R
 class ClipboardWidgetProvider : AppWidgetProvider()
 {
 
+    @SuppressLint("UnsafeIntentLaunch")
     override fun onUpdate(
         context: Context,
         appWidgetManager: AppWidgetManager,
@@ -25,9 +27,9 @@ class ClipboardWidgetProvider : AppWidgetProvider()
             val sendClipboardIntent = ClipboardFloatingActivity.getIntent(context, true)
             val sendClipboardPendingIntent = PendingIntent.getActivity(
                 context,
-                14,
+                0,
                 sendClipboardIntent,
-                PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_MUTABLE)
+                PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE)
             v.setOnClickPendingIntent(R.id.widget_button, sendClipboardPendingIntent)
 
             appWidgetManager.updateAppWidget(appWidgetId, v)
