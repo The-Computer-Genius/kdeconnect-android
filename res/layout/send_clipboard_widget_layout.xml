@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/send_clipboard_relative_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FEF7FF"
+    android:padding="8dp">
+
+
+    <ImageButton
+        android:id="@+id/widget_button"
+        style="@style/Widget.Material3.Button.IconButton.Filled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="Send Clipboard"
+        android:src="@drawable/content_paste_go_24"
+        android:background="@drawable/send_clipboard_widget_btn"
+        app:iconSize="24dp"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <TextView
+        android:id="@+id/widget_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/widget_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:text="Send Clipboard"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+
+</RelativeLayout>

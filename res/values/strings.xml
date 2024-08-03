@@ -576,4 +576,7 @@ SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted
     <string name="mpris_keepwatching_settings_summary">Show a silent notification to continue playing on this device after closing media</string>
     <string name="notification_channel_keepwatching">Continue playing</string>
 
+    <string name="send_clipboard_widget_description">Send Clipboard to selected Device</string>
+
+
 </resources>
