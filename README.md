@@ -1,3 +1,11 @@
+# What's different
+KDE Connect is developed by KDE. I claim no credit in it's development except one addition: A "Send Clipboard" Widget for the android app.
+
+# Need for the widget
+Android does not allow apps to keep track of clipboard changes, so the app cannot sync the clipboard automatically unless initiated through user action.
+So i add a widget with a button that will send the clipboard, making it a tad bit easier to sync your phone's clipboard with other devices.
+
+
 # KDE Connect - Android app
 
 KDE Connect is a multi-platform app that allows your devices to communicate (eg: your phone and your computer).
